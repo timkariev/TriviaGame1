@@ -5,14 +5,15 @@ body {
 
 body {
   text-align: center;
-  background-image: url("../images/Universe.jpeg");
+  
+  background: url("../images/Universe.jpeg") no-repeat fixed center ;
 }
 
 #wrapper {
   width: 960px;
   height: 95%;
   box-sizing: border-box;
-  margin: 2.5% auto;
+  margin: 0% auto;
   background-blend-mode: luminosity blue    ;
 }
 
@@ -40,39 +41,47 @@ img {
 
 h1 {
   padding-top: 2.5%;
-  font-family: Geo, sans-serif;
   font-size: 6.5em;
+  color: #228DFF;
   font-weight: bold;
-  color: blue;
-}
-
-h2 {
-  margin-bottom: 25px;
-  font-size: 45px;
+  font-family: Iceland;
   text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+h2 {
+ margin-bottom: 60px;
+  font-size: 40px;
+  text-decoration: none;
   color: #FFDD1B;
-  font-family: Pacifico;
-  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
-  animation: neon3 1.5s ease-in-out infinite alternate;
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 0 ;
+  vertical-align: top;
 }
 
 h3 {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-size: 25px;
 }
 
 #start {
-    text-decoration: none;
+position: fixed;
+
+  
+  
+   text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
   color: #BA01FF;
   font-family: Vampiro One;
-  font-size: 45pt    
+  font-size: 45pt ;  
+  
 }
 
 #start:hover {
@@ -84,14 +93,44 @@ h3 {
 
 }
 
- button start:hover {
+ button#start:hover {
     color: #ffffff;
   }
 
 
+  #counter-number {
+text-decoration: none;
+    -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #FFDD1B;
+  font-family: 'Orbitron', sans-serif;
+  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+  animation: neon3 1.5s ease-in-out infinite alternate;
+
+}
+
+
+button {
+
+  display: block;
+  width: 50%;
+  height: 20%;
+  margin: 0 auto;
+  font-size: 42px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+
+
+}
+
 button:hover {
-  
- 
+  -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+  color: #ffffff;
 }
 
 @-webkit-keyframes neon6 {
@@ -133,31 +172,63 @@ button:hover {
   }
 
 
-
+/* NEON H2*/
   @-webkit-keyframes neon3 {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff,  0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
     }
     to {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
     }
+
   }
+  
 
 
   @-moz-keyframes neon3 {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
     }
     to {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff,  0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
     }
   }
 
   @keyframes neon3 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff,  0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  }
+}
+
+
+/* Neon h1*/
+
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@-moz-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
   }
 }
