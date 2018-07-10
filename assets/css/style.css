@@ -1,0 +1,125 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  background-image: url("../images/Universe.jpeg");
+}
+
+#wrapper {
+  width: 960px;
+  height: 95%;
+  box-sizing: border-box;
+  margin: 2.5% auto;
+  background-blend-mode: luminosity blue    ;
+}
+
+
+
+#sub-wrapper {
+  position: relative;
+  top: 15%;
+}
+
+button {
+  display: block;
+  width: 50%;
+  height: 20%;
+  margin: 0 auto;
+  font-size: 42px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
+img {
+  height: 200px;
+}
+
+h1 {
+  padding-top: 2.5%;
+  font-family: Geo, sans-serif;
+  font-size: 6.5em;
+  font-weight: bold;
+  color: blue;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 35px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+#start {
+    text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #BA01FF;
+  font-family: Vampiro One;
+  font-size: 45pt    
+}
+
+#start:hover {
+    
+    -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+  color: #ffffff;
+
+}
+
+ button start:hover {
+    color: #ffffff;
+  }
+
+
+button:hover {
+  
+ 
+}
+
+@-webkit-keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }
+
+@-moz-keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }
+  /*glow*/
+
+@keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }
+  /*REEEEEEEEEEESPONSIVE*/
+  
+  @media (max-width: 650px) {
+    #container {
+      width: 100%;
+    }
+    p {
+      font-size: 3.5em;
+    }
+  }
+
