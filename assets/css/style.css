@@ -70,7 +70,12 @@ h3 {
 }
 
 #start {
-position: fixed;
+position: absolute;
+margin-left: 50%;
+margin-right: 50%;
+left: -240px;
+top: 120px;
+
 
   
   
