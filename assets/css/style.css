@@ -33,6 +33,9 @@ button {
   cursor: pointer;
   background: transparent;
   border: 0;
+  font-family: 'Play', sans-serif;
+  
+
 }
 
 img {
@@ -68,8 +71,11 @@ h2 {
 }
 
 h3 {
+  margin-top: 30px;
   margin-bottom: 30px;
   font-size: 25px;
+  font-family: 'Libre Barcode 128 Text', cursive,;
+
 }
 
 #start {

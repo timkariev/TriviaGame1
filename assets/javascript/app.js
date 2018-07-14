@@ -2,50 +2,50 @@
 var panel = $("#quiz-area");
 var countStartNumber = 30;
 
-// Question set
+
 var questions = [{
-  question: "What was the first full length CGI movie?",
-  answers: ["A Bug's Life", "Monsters Inc.", "Toy Story", "The Lion King"],
-  correctAnswer: "Toy Story",
-  image: "assets/images/toystory.gif"
+  question: "Who is Fastes Super Hero?",
+  answers: ["SuperMan", "Flash", "Iron Man", "Balck Panther"], 
+  correctAnswer: "Flash",
+  image: src="https://media.giphy.com/media/m2tOKbpjpFMvm/giphy.gif"
 }, {
-  question: "Which of these is NOT a name of one of the Spice Girls?",
-  answers: ["Sporty Spice", "Fred Spice", "Scary Spice", "Posh Spice"],
-  correctAnswer: "Fred Spice",
-  image: "assets/images/spicegirls.gif"
+  question: "Who is Luke SkyWalker ?",
+  answers: ["Storm Trooper", "Jedi", "Robot", ],
+  correctAnswer: "Jedi",
+  image: src="https://www.speakgif.com/wp-content/uploads/2015/11/star-wars-the-phanthom-menace-obi-wan-help-animated-gif.gif"
 }, {
-  question: "Which NBA team won the most titles in the 90s?",
-  answers: ["New York Knicks", "Portland Trailblazers", "Los Angeles Lakers", "Chicago Bulls"],
-  correctAnswer: "Chicago Bulls",
-  image: "assets/images/bulls.gif"
+  question: "Whats the Name of the movie about Big Roaches",
+  answers: ["Men In Black", "Starship Troopers", "Mutants", "Pirania"],
+  correctAnswer: "Starship Troopers",
+  image: src="https://i.pinimg.com/originals/a9/a7/d7/a9a7d776bbfb6869ee1e9f014d67ddd5.gif"
 }, {
-  question: "Which group released the hit song, 'Smells Like Teen Spirit'?",
-  answers: ["Nirvana", "Backstreet Boys", "The Offspring", "No Doubt"],
-  correctAnswer: "Nirvana",
-  image: "assets/images/nirvanabark.gif"
+  question: "Which song was sing by Roling Stones?",
+  answers: ["Yesterday", "Every Breaking Wave", "Gimme a Shelter", "Numb"],
+  correctAnswer: "Gimme a Shelter",
+  image: src="https://i.pinimg.com/originals/ab/f3/e8/abf3e89d38a57111bab50f6cd301556b.gif"
 }, {
-  question: "Which popular Disney movie featured the song, \"Circle of Life\"?",
-  answers: ["Aladdin", "Hercules", "Mulan", "The Lion King"],
-  correctAnswer: "The Lion King",
-  image: "assets/images/lionking.gif"
+  question: "What was the name of Spider Man",
+  answers: ["Harry Osborne", "Clark Kent", "Eddie Brooke", "Peter Parker"],
+  correctAnswer: "Peter Parker",
+  image: src="https://steamusercontent-a.akamaihd.net/ugc/268345016172244229/2378809E494C75B60672C9F5273060313E6A1EB4/"
 }, {
-  question: "Finish this line from the Fresh Prince of Bel-Air theme song: \"I whistled for a cab and when it came near, the license plate said...\"",
-  answers: ["Dice", "Mirror", "Fresh", "Cab"],
-  correctAnswer: "Fresh",
-  image: "assets/images/fresh.gif"
+  question: "Who is Main Singer in Beatles?",
+  answers: ["Michael Jackson", "John Lenon", "Frank Senatra", "2Chainz"],
+  correctAnswer: "John Lenon",
+  image: src="https://media1.tenor.com/images/a0a0afe04db5a0f1a58aa581b6df0c6f/tenor.gif?itemid=8356418"
 }, {
-  question: "What was Doug's best friend's name?",
-  answers: ["Skeeter", "Mark", "Zach", "Cody"],
-  correctAnswer: "Skeeter",
-  image: "assets/images/skeeter.gif"
+  question: "What was the Cyclop's ability in X-Men? ",
+  answers: ["Fly", "Laser Beam", "Storm", "Teleport"],
+  correctAnswer: "Laser Beam",
+  image: src="https://media1.tenor.com/images/195f2fe3c94413b003e871991bb07b44/tenor.gif?itemid=7486754"
 }, {
-  question: "What was the name of the principal at Bayside High in Saved By The Bell?",
-  answers: ["Mr.Zhou", "Mr.Driggers", "Mr.Belding", "Mr.Page"],
-  correctAnswer: "Mr.Belding",
-  image: "assets/images/belding.gif"
+  question: "What is the name of Iron Man?",
+  answers: ["Peter Parker", "Bruce Wayne", "Tony Stark", "Eddie Brooke"],
+  correctAnswer: "Tony Stark",
+  image: src="https://media1.tenor.com/images/80eb9c353ee40c8abf95e508bf8ce3ea/tenor.gif?itemid=7371460"
 }];
 
-// Variable to hold our setInterval
+
 var timer;
 
 var game = {
@@ -170,7 +170,7 @@ var game = {
   }
 };
 
-// CLICK EVENTS
+
 
 $(document).on("click", "#start-over", function() {
   game.reset();
